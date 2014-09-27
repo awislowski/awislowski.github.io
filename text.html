@@ -25,5 +25,25 @@
       </section>    
 
     </section>
+
+<script src="/assets/reveal.js-2.6.2/lib/js/head.min.js"></script>
+<script src="/assets/reveal.js-2.6.2/js/reveal.min.js"></script>
+
+<script>
+    Reveal.initialize({
+        controls: false,
+        progress: false,
+        history: true,
+
+        transition: Reveal.getQueryHash().transition || 'default',
+        dependencies : [
+            { src: '/assets/reveal.js-2.6.2/lib/js/classList.js', condition: function () { return !document.body.classList;} },
+            { src: '/assets/reveal.js-2.6.2/plugin/highlight/highlight.js', async: true, callback: function () { window.hljs.initHighlightingOnLoad();} },
+            { src: '/assets/reveal.js-2.6.2/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+            { src: '/assets/reveal.js-2.6.2/plugin/zoom-js/zoom.js', condition: function() { return !!document.body.classList; } }
+        ]
+    });
+</script>
+
 </body>
 </html>
